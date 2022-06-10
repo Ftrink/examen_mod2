@@ -1,9 +1,12 @@
 // variables
 let palabraAleatoria;
-let time = 10;
+let time = 11; // se ve el 10 en pantalla =P .. cambiar
 let score = 0;
-let hone = document.querySelector('#randomWord'); //h1
 let palabraingresada;
+let hone = document.querySelector('#randomWord'); //h1
+let timeSpan = document.querySelector('#timeSpan')
+const inputt = document.querySelector('#inputt'); 
+
 // listado palabras
 const words = [
     'californication',
@@ -36,37 +39,43 @@ function addToDOM (){
     hone.textContent = palabraalazar
 } 
 
+//manipulando el tiempo
+let timeInterval = setInterval(actualizarTiempo, 1000);
+function actualizarTiempo(){
+    if(time > 0){
+    time --
+    }
+    if (time === 0){
+    clearInterval(timeInterval);
+    }
+    timeSpan.textContent = time
+} //<==========>
+
 // inicia el juego
 addToDOM()
+actualizarTiempo()
 
-const inputt = document.querySelector('#inputt')
+// EVENTs
 inputt.addEventListener('keyup', function(evn){
         if(evn.keyCode == 13){ 
             palabraingresada = inputt.value;
             for(let i of words)
-            if (i == palabraingresada ){
-                inputt.value = '';        // limpia el input
+            if (i == palabraingresada ) {
+                inputt.value = '';  // limpia el input
+                addToDOM()      //reinica h1
                 console.log('es igual')
 
-
-            /*Que la variable time aumente 3 segundos.
-            ● Que el input vuelva a quedar vacío.
+            //Que la variable time aumente 3 segundos.
             
-            ● Volver a invocar la Función addToDOM()  AUTOMATICO CON ENTER ?   */            
-        }else{
-            console.log('Nooopee')
-        }
-    }
-    //console.log(evn)
+        } else {
+            console.log('Nooouuupp')
+            }
+        } 
+    })
 
 
-/* inputt.addEventListener('keyup' , function(evn){
-            const ingreso = inputt.value;
-            for(let indice of css_color_names){
-            if(indice == ingreso){
-                caja1.style['background-color'] = ingreso;
-                                return
-            }  
-        }*/
+    //    <========>
 
-})
+
+
+
