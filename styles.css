@@ -1,21 +1,34 @@
-.container{
-    background-color: darkgray;
-    text-align: center;
-    margin-top: 5rem;
-    max-width: 400px;
-    box-shadow: 0 0 1px #000;
-    padding:  1rem;
-    opacity: 1;
-    transition: 0.2 all linear;
+body{
+    background-color: darkgreen;
+    padding-top: 200px;
+    padding-left: 15%;
+
+
 }
+/*<iframe src="https://giphy.com/embed/WoD6JZnwap6s8" width="480" height="384" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-matrix-WoD6JZnwap6s8">via GIPHY</a></p>*/
+
+
+
+.container{
+    width: 80%;
+    height: 100%;
+    border-radius: 2rem;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+    
+    }
+
 .main{
     background-color:tomato;
-    margin-top: 5rem;
-    max-width: 400px;
-    box-shadow: 0 0 1px #000;
-    padding:  1rem;
-    opacity: 1;
-    transition: 0.2 all linear;
+    min-width: 400px;
+    min-height: 300px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 2rem
     }
     
 .main_hide{
@@ -24,16 +37,29 @@
 
     .end-game-container{  
         display: none;
-    
     }
 
     #end-game-container{    
-    background-color:rgb(50, 190, 200);
-    margin-top: 5rem;
-    max-width: 400px;
-    box-shadow: 0 0 1px #000;
-    padding:  1rem;
-    opacity: 1;
+        background-color:rgb(50, 190, 200);
+        display: flexbox;
+        min-width: 400px;
+        min-height: 300px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        padding: 40px;
+        border-radius: 2rem
     
-    
+    }
+    .button{
+        padding: 1rem;
+        border-radius: 6px;
+
+    }
+    #inputt{
+        width: 70%;
+        padding: 5px;
+        letter-spacing: 1px;
+        
+
     }

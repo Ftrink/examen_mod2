@@ -80,7 +80,6 @@ function actualizarTiempo(){
 addToDOM()
 actualizarTiempo()
 
-
 // EVENTs
 inputt.addEventListener('keyup', function(evn){
         if(evn.keyCode == 13){ 
