@@ -1,65 +1,40 @@
 body{
-    background-color: darkgreen;
-    padding-top: 200px;
-    padding-left: 15%;
-
-
-}
-/*<iframe src="https://giphy.com/embed/WoD6JZnwap6s8" width="480" height="384" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-matrix-WoD6JZnwap6s8">via GIPHY</a></p>*/
-
-
-
-.container{
-    width: 80%;
-    height: 100%;
-    border-radius: 2rem;
-    display:flex;
+    width: 100%;
+    height: 100%;  /*vh para ocupar el 100 % del alto del dispositivo*/
+    display:flex;  /*para manipular main // prueba*/
     justify-content: center;
     justify-items: center;
-    background-color: black;
+    background-image: url(https://w0.peakpx.com/wallpaper/909/364/HD-wallpaper-monster-abstract-android-black-green-iphone-lines-neon-pattern-stripes.jpg);
+    /*background-repeat:no-repeat ;*/
+    padding-top: 14rem;
     
-    }
-
+}
 .main{
-    background-color:tomato;
-    min-width: 400px;
-    min-height: 300px;
-    justify-content: center;
-    justify-items: center;
+    background-color:rgba(105, 223, 27, 0.664); 
+    min-width: 300px;   
     text-align: center;
     padding: 40px;
     border-radius: 2rem
-    }
-    
+}
+#end-game-container{    
+    background-color:rgba(22, 126, 196, 0.780);    
+    min-width: 300px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 2rem
+}
 .main_hide{
     display: none;
-    }
-
-    .end-game-container{  
-        display: none;
-    }
-
-    #end-game-container{    
-        background-color:rgb(50, 190, 200);
-        display: flexbox;
-        min-width: 400px;
-        min-height: 300px;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-        padding: 40px;
-        border-radius: 2rem
-    
-    }
-    .button{
-        padding: 1rem;
-        border-radius: 6px;
-
-    }
-    #inputt{
-        width: 70%;
-        padding: 5px;
-        letter-spacing: 1px;
-        
-
-    }
+}
+.end-game-container{  
+    display: none;
+}
+.button{
+    padding: 1rem;
+    border-radius: 6px;
+}
+#inputt{
+    width: 70%;
+    padding: 5px;
+    letter-spacing: 1px;
+}

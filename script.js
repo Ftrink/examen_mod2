@@ -63,7 +63,7 @@ function hide(){
 
 //manipulando el tiempo
 let timeInterval = setInterval(actualizarTiempo, 1000);
-function actualizarTiempo(){
+function actualizarTiempo(){    
     if(time > 0){
     time --
     }
@@ -90,10 +90,12 @@ inputt.addEventListener('keyup', function(evn){
                 time = time +3;
                 updateScore()
                 addToDOM()      //reinica h1
-            }         //agregar Incorrecto al mal tipear ?  
+            } /*else {
+                let maltyp;
+                maltyp.innerHTML = '<p><strong>¡ Incorrecto !<strong></p>';
+            }*/  //agregar Incorrecto con else al mal tipear ?
         }  
     })
-    
     //    <========>
 
 
